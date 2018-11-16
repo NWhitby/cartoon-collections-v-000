@@ -5,14 +5,14 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(planeteer_calls)
-    planeteer_calls.collect do |element|
+    planeteer_calls.map do |element|
       element.capitalize + "!"
     end
 end
 
 def long_planeteer_calls(long_planeteer_calls)
   long_planeteer_calls.any? do |element|
-    element.length > 4 
+    element.length > 4
   end
 end
 
